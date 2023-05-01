@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/playfair-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lexend-deca" rel="stylesheet">
+                
     <title>Landing Page</title>
 </head>
 <body>
@@ -48,6 +51,80 @@
 
         <article class="featured">
             <h2 class="typical-header">Featured Recipes</h2>
+            <section class = "featured-recipes-container">
+                <div class="featured-recipe">
+                    <img src="Assets/makis_petratzikis.jpg" class="featured-recipe-chef" alt="face portrait of chef petratzikis">
+                    <img src="Assets/beef_bowl.png" class="featured-recipe-icon">
+                    <h3>Beef Bowl</h3>
+                    <p>Makis Petratzikis</p>   
+                </div>
+                <div class="featured-recipe">
+                    <img src="Assets/kolovou.jpg" class="featured-recipe-chef" alt="face portrait of chef kolovou">
+                    <img src="Assets/avocado_toast.png" class="featured-recipe-icon">
+                    <h3>Avocado Toast</h3>
+                    <p>Maria Kolovou</p>   
+                </div>
+                <div class="featured-recipe">
+                    <img src="Assets/dysthxhs_gletsas.jpg" class="featured-recipe-chef" alt="face portrait of chef gletsas">
+                    <img src="Assets/bruschetta.png" class="featured-recipe-icon">
+                    <h3>Bruschetta</h3>
+                    <p>Dysthxhs Gletsas</p>   
+                </div>        
+            </section>
+        </article>
+
+        <!-- Features - Reviews -->
+
+        <article class="gray-index">
+            <h2>Features</h2>
+            <section class="features-container">
+                <div>
+                    <img src="Assets/lemon.png" alt="lemon pie with its ingredients">
+                    <h3>Recipes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum dui a nisl molestie scelerisque. Vivamus accumsan, arcu pulvinar suscipit egestas, orci orci blandit elit, hendrerit pretium ipsum nisl vel.</p>
+                </div>
+                <div>
+                    <img src="Assets/calendar.png" alt="calendar">
+                    <h3>Nutrition Calendar</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum dui a nisl molestie scelerisque. Vivamus accumsan, arcu pulvinar suscipit egestas, orci orci blandit elit, hendrerit pretium ipsum nisl vel.</p>
+                </div>
+                <div>
+                    <img src="Assets/contact.png" alt="speech bubbles">
+                    <h3>Help by Nutritionists</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum dui a nisl molestie scelerisque. Vivamus accumsan, arcu pulvinar suscipit egestas, orci orci blandit elit, hendrerit pretium ipsum nisl vel.</p>
+                </div>
+            </section>
+            <hr>    
+            <section class="app-reviews-container">
+                <div class="app-review">
+                    <img src="Assets/giannis_vousvoukys.jpg" alt="face portrait of giannis vousvoukys" class="user-review-img">
+                    <img src="Assets/quotes.png" alt="quote icon" class="quote-icon">
+                    <div class="user-review-text">
+                        <p class="user-review-exp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius lacus vel posuere pellentesque. Cras a tortor in urna vestibulum vehicula eget eget erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p class="user-review-name">-  Giannis Vousvoukys</p>
+                    </div>
+                </div>
+                <hr class="review-hr">
+                <div class="app-review">
+                    <div class="user-review-text">
+                        <p class="user-review-exp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius lacus vel posuere pellentesque. Cras a tortor in urna vestibulum vehicula eget eget erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p class="user-review-name">-  Stamatis Koularis</p>
+                    </div>
+                    <img src="Assets/quotes.png" alt="quote icon" class="quote-icon">
+                    <img src="Assets/stamatis_koularis.jpg" alt="face portrait of stamatis Koularis" class="user-review-img">
+                </div>
+                <hr class="review-hr">
+                <div class="app-review">
+                    <img src="Assets/oikonomou.jpg" alt="face portrait of eleni Oikonomou" class="user-review-img">
+                    <img src="Assets/quotes.png" alt="quote icon" class="quote-icon">
+                    <div class="user-review-text">
+                        <p class="user-review-exp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius lacus vel posuere pellentesque. Cras a tortor in urna vestibulum vehicula eget eget erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p class="user-review-name">-  Eleni Oikonomou</p>
+                    </div>
+                </div>
+
+
+            </section>
         </article>
 
     </main>
@@ -55,6 +132,47 @@
     <!-- Footer -->
 
     <footer>
+        <section class="footer-koba">
+            
+            <!-- Left Side of Footer-->
+
+            <section class="head_logo">
+                <img src="Assets/koba_logo.png" alt="kobachef_logo" class="logo">
+                <h1 id="footer-heading">KOBACHEF</h1>
+            </section>
+            <section class="social-media">
+                <img src="Assets/linkedin.png">
+                <img src="Assets/facebook.png">
+                <img src="Assets/twitter.png">
+                <img src="Assets/instagram.png">
+            </section>
+            <section class="trademark"> 
+                <p>@2023 KOBACHEF, All rights reserved</p>
+            </section>
+        </section>
+
+            <!-- Right Side of Footer-->
+            
+            <section class="footer-info">
+                <section class="footer-product">
+                    <h4>Product</h4>
+                    <ul>
+                        <li>Overview</li>
+                        <li>Features</li>
+                        <li>Pricing</li>
+                        <li>Sign Up</li>
+                    </ul>
+                </section>
+                <section class="footer-company">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>Terms and Conditions</li>
+                        <li>About Us</li>
+                        <li>Support</li>
+                        <li>Blog</li>
+                    </ul>
+                </section>
+            </section>
 
     </footer>
 

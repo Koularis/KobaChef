@@ -5,11 +5,15 @@
     padding:0;
 }
 
-body{
+html,body{
     display:flex;
     flex-direction: column;
     background-color: #EEE6DE;
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
 }
 
 .logo{
@@ -26,9 +30,6 @@ main{
 h1,h2,h3{
     font-family: 'Lexend Deca', sans-serif;
     color: #8E2D12;
-}
-
-.typical-header{
     font-size: 5rem;
     font-weight: 900;
 }
@@ -71,13 +72,70 @@ header{
     font-weight: 500;
 }
 
-/* Index */
+/* Footer */
+footer{
+    margin-top: 50rem;
+    display:flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    height:50rem;
+    background-color: #333333;
+    color:#EEE6DE;
+    gap:15rem;
+    padding-top:1.5rem;
+}
+
+.footer-koba{
+    display:flex;
+    flex-direction: column;
+    /* margin-le    /* margin-left: 15rem;ft: 15rem; */
+    gap:0.5rem;
+    margin-right:10rem;
+}
+
+#footer-heading{
+    color:#EEE6DE;
+}
+
+.social-media{
+    display:flex;
+    margin-left:3rem;
+    gap:2.5rem;
+}
+
+.trademark > p{
+    font-size: 1.2rem;
+    margin: 2rem 0 0.2rem -26rem;
+}
+
+.footer-info{
+    display: flex;
+    gap:15rem
+    /* margin:2rem 15rem; */
+}
+
+.footer-info h4{
+    font-size:1.8rem;
+}
+
+.footer-info ul{
+    margin-top: 0.5rem;
+    list-style: none;
+}
+
+.footer-info li{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+/* Index Hero Section*/
 
 .hero{
     display:flex;
     gap:2rem;
-    margin-top: 13rem;
-    padding:0 10rem;
+    margin-top: 16rem;
+    padding:0 8rem;
 }
 
 .hero-text{
@@ -87,11 +145,6 @@ header{
     padding-left:3rem;
     margin-right: -5rem;
 }
-
-/* .hero-text > h2{
-    font-size: 5rem;
-    font-weight: 900;
-} */
 
 .hero-text > p{
     font-size: 1.3rem;
@@ -142,14 +195,176 @@ header{
     height:52rem;
     width:75rem;
     margin-top:-13rem;
-    margin-right: -15rem;
+    margin-right: -10rem;
 }
 
-/* Featured Recipes */
+/* Index Featured Recipes */
+
 .featured{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:8rem;
+
 }
+
+.featured-recipes-container{
+    display:flex;
+    gap:15rem;
+    justify-content: space-around;
+}
+
+.featured-recipe{
+    width:23rem;
+    height: 27rem;
+    background-color: #FFB254;
+    display:flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+
+.featured-recipe-icon{
+    width:23rem;
+    height: 23rem;
+    margin-top: -5rem;
+}
+
+.featured-recipe-chef{
+    width:3.5rem;
+    height:3.5rem;
+    border-radius: 100%;
+    align-self: flex-end;
+    margin:1rem;
+    border:0.2rem solid #EEE6DE;
+}
+
+.featured-recipe > h3{
+    margin-top:-3.5rem;
+    font-size: 2.2rem;
+}
+
+.featured-recipe > p{
+    font-weight: 500;
+    font-size:1.5rem;
+    margin-top:0.5rem;
+}
+
+/* Features - Reviews */
+
+.gray-index{
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5rem 0;
+    margin-top: 5rem;
+}
+
+.gray-index > h2{
+    color:#EEE6DE;
+}
+
+.features-container{
+    display:flex;
+    justify-content: space-between;
+    gap:12rem;
+    margin-top:5rem;
+}
+
+.features-container > div{
+    background-color: #EEE6DE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:25rem;
+    height:35rem;
+    gap:1.5rem;
+    border-radius: 1.5rem;
+}
+
+.features-container > div > img{
+    width:13rem;
+    height: 13rem;
+    margin-top: 2rem;
+}
+
+.features-container > div > h3{
+    font-size: 2rem;
+}
+
+.features-container > div > p{
+    max-width: 20rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.gray-index > hr{
+    border: 0.3rem solid #EEE6DE;
+    width: 100%;
+    margin-top:5rem;
+}
+
+.app-reviews-container{
+    display: flex;
+    flex-direction: column;
+    gap:8rem;
+    margin-top: 10rem;
+    justify-content: flex-start;
+    padding:0 10rem;
+
+}
+
+.app-review{
+    display: flex;
+}
+
+.user-review-img{
+    width:18rem;
+    height: 18rem;
+    border-radius: 100%;
+    flex-shrink: 0;
+    /* border: 0.3rem solid #EEE6DE; */
+    margin-top: 1.5rem;
+}
+
+.quote-icon{
+    width:4rem;
+    height:4rem;
+    transform: rotate(180deg);
+    margin:1rem;
+}
+
+.user-review-text{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    color: #EEE6DE;
+    margin-left: 1.5rem;
+}
+
+.user-review-exp{
+    margin-top:3rem;
+    font-size:2rem;
+    font-family: 'Playfair Display', sans-serif;
+    color: #EEE6DE;
+}
+
+.user-review-name{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.review-hr{
+    border:0.1rem solid #EEE6DE;
+    width:80%;
+    margin-top: -2rem;
+}
+
+.review-hr:nth-child(2){
+    margin-left: 21rem;
+}
+
 
 
