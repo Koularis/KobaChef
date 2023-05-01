@@ -366,5 +366,38 @@ footer{
     margin-left: 21rem;
 }
 
+/* Recipe */
+.recipe{
+    display: flex;
+    flex-direction: column;
+    margin-top:3rem;
+    align-items: center;
+}
 
+.recipe > h2{
+    font-size: 7rem;
+}
 
+/* Recipe Preview */
+
+.recipe-preview{
+    display:flex;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+    background-color: #FFB254;
+    width: 100%;
+    padding:10rem;
+    gap: 15rem;
+}
+
+.recipe-preview > img{
+    /* flex-shrink: 0; */
+}
+
+.recipe-line{
+    width:0.5rem;
+    height:30rem;
+    background-color: #8E2D12;
+    align-self: center;
+    justify-self: center;
+}
