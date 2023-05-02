@@ -1,0 +1,32 @@
+{
+  "name": "kobachef",
+  "version": "1.0.0",
+  "description": "web app for healthy eating ",
+  "main": "index.js",
+  "dependencies": {
+    "bson": "^5.2.0",
+    "express": "^4.18.2",
+    "ip": "^2.0.0",
+    "memory-pager": "^1.5.0",
+    "mongodb": "^5.3.0",
+    "mongodb-connection-string-url": "^2.6.0",
+    "mongoose": "^7.0.4",
+    "punycode": "^2.3.0",
+    "saslprep": "^1.0.3",
+    "smart-buffer": "^4.2.0",
+    "socks": "^2.7.1",
+    "sparse-bitfield": "^3.0.3",
+    "tr46": "^3.0.0",
+    "webidl-conversions": "^7.0.0",
+    "whatwg-url": "^11.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

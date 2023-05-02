@@ -1,0 +1,10 @@
+.meow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mikrh{
+    width:200px;
+    height:200px;
+}
