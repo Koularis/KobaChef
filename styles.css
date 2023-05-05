@@ -367,6 +367,13 @@ footer{
     margin-left: 21rem;
 }
 
+.leaderboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
 /* Recipe */
 
 .recipe-body{
@@ -575,6 +582,202 @@ footer{
     margin-left: 0.75rem;
     font-weight: bold;
 }
+
+/* All Recipes Body */
+
+.recipes-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:4rem;
+    color:#EEE6DE;
+}
+
+.filter-recipes{
+    display:flex;
+    gap:13rem;
+    width:100%;
+    justify-content: flex-start;
+    margin-top:5rem;
+    padding:0 12rem;
+    box-sizing: border-box;
+}
+
+.filter{
+    background-color: #333333;
+    padding:2rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.filter > h4{
+    font-size: 2rem;
+}
+
+.filter hr{
+    height:0.2rem;
+    background-color: #EEE6DE;
+    width:17rem;
+    margin:1rem 0 1rem 0;
+}
+
+.filter label{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+fieldset{
+    border: none;
+}
+
+fieldset > legend{
+    font-size: 1.5rem;
+    margin: 0.5rem 0rem 1rem 0rem;
+}
+
+.container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: none;
+}
+
+
+/* Hide the browser's default checkbox */
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+
+/* When the checkbox is checked, add an orange background */
+.container input:checked ~ .checkmark {
+background-color: #FFB254;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+} 
+
+.center-button{
+    display:flex;
+    justify-content:center;
+    margin-top: 1rem;
+}
+
+.apply-type{
+    background-color: #49C71D;
+    padding:0.75rem 3rem;
+    border-radius: 0.5rem;
+    border:none;
+    font-size: 1.5rem;
+    color:#EEE6DE;
+    font-weight: bold;
+}
+
+.recipes-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:5rem;
+}
+
+.recipes-container > div{
+    display:flex;
+    flex-direction: column;
+    background-color: #FFB254;
+    height: 17rem;
+    border-radius: 0.5rem;
+}
+
+.recipes-container > div >img{
+    width:17rem;
+    height:17rem;
+    margin-top: -1.5rem;
+}
+
+.recipes-container span{
+    color:#49C71D;
+    align-self: flex-end;
+    margin:-3.5rem 0.5rem 0 0;
+    font-weight: bold;
+    font-size: 1.35rem;
+}
+
+.recipes-container > div > div{
+    display:flex;
+    background-color: #333333;
+    width:100%;
+    height: 100%;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    box-sizing: border-box;
+    padding:0.75rem 1rem;
+    gap:3rem;
+    margin-top: 0.75rem;
+}
+
+.recipe-name{
+    font-size: 1.3rem;
+    color:#FFB254;
+    margin-bottom: 0.25rem;
+}
+
+.recipe-chef-img{
+    border-radius: 50%;
+    width:3rem;
+    height:3rem;
+    border:0.2rem solid #EEE6DE;
+}
+
+
+
+
 
 
 
